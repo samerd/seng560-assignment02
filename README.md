@@ -80,7 +80,7 @@ And the number to be converted:
 Please enter number to convert:
 ```
 
-the application will convert the given number from the input format to the output format.
+The application will convert the given number from the input format to the output format.
 
 # Reuse experience
 
@@ -95,9 +95,11 @@ Although the reuse was very simple and straight-forward, the resued library does
 
 The error displayed in these two cases does not reflect the real error.
 
-to overcome these issues we can do the following:
+To overcome these issues we can do the following:
 
 1. modify the reused library (whitebox reuse)
 2. let our application catch these errors before calling the reused library, which will add ore complexity to the application. we can also use some decorator of these functions.
 
-neither one of these two options was used, and it was left as is.
+Neither one of these two options was used, and it was left as is.
+
+Please note that the menu module is totally independent of this application and hence can be reused for other applications.
